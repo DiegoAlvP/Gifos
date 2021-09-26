@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--Estilos CSS-->
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!--Google Font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <title>Gifos</title>
+</head>
+
+<body>
+  <section class="main-container" id="mainContainer">
+    <header class="header-nav">
+      <nav class="header-nav__main ">
+        <div class="header-nav__icon">
+          <a
+            href="#"
+            class="header-nav__logo">
+          </a>
+        </div>
+        <input type="checkbox" class="header-nav__btn" id="menubtn" />
+        <label for="menubtn" class="header-nav__label ">
+          <span class="header-nav__bars1 dm"></span>
+          <span class="header-nav__bars2 dm"></span>
+          <span class="header-nav__bars3 dm"></span>
+        </label>
+        <div class="header-nav__options">
+          <ul class="header-nav__items">
+            <li class="header-nav__item">
+              <a
+                href="#"
+                class="header-nav__link"
+                id="btnDark">
+                Modo Nocturno
+              </a>
+            </li>
+            <li class="header-nav__item">
+              <a
+                href="#"
+                class="header-nav__link"
+                id="btnFavorites">
+                Favoritos
+              </a>
+            </li>
+            <li class="header-nav__item">
+              <a
+                href="#"
+                class="header-nav__link"
+                id="btnMygifos">
+                Mis GIFOS
+              </a>
+            </li>
+          </ul>
+          <button
+            class="header-nav__btncreate">
+            <span>+</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <section class="search">
+      <div class="search__main">
+        <div class="search__title">
+          <h1 class="search__title-content ">
+            Inspírate, busca, guarda, y crea los mejores
+            <span class="search__title-note">
+              GIFOS
+            </span>
+          </h1>
+        </div>
+        <div class="search__main-form">
+          <div class="search__img-container">
+            <img
+              class="search__img"
+              src="assets/ilustra_header.svg"
+              alt="Imagen"
+            />
+          </div>
+          <div class="search__form ">
+            <input
+              type="text"
+              class="search__text" name="searchText" placeholder="Busca GIFOS y más"
+            />
+            <i class="search__icon fas fa-search"></i>
+            <i class="search__iconoff fas fa-times"></i>
+            <div class="search__content"></div>
+          </div>
+          <div class="search-content__trending">
+            <h3 class="search-content__title">Trending:</h3>
+            <p class="search-content__description">
+              Reactions, Entertainment, Sports, Stickers, Artists
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="search-trending">
+      <div class="search-trending__main">
+        <h3 class="search-trending__itemtitle"></h3>
+        <div class="search-trending__container-main">
+          <div class="search-trending__container">
+            <div class="search-trending__items">
+              <div class="optioncard">
+                <div class="optioncard__container">
+                  <button
+                    type="button"
+                    class="optioncard__btnicon btn-favorites">
+                      <i class="optioncard__icon icon-favorites fa-heart"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="optioncard__btnicon btn-download">
+                    <img
+                      src="assets/icon-download.svg"
+                      alt="Icono de descarga"
+                      class="optioncard__icon icon-download">
+                  </button>
+                  <button
+                    type="button"
+                    class="optioncard__btnicon btn-max">
+                    <img
+                      src="assets/icon-max-normal.svg"
+                      alt="Icono de maximizar"
+                      class="optioncard__icon icon-max">
+                  </button>
+                </div>
+                <div class="optioncard__container-data">
+                  <p class="optioncard__user"></p>
+                  <h6 class="optioncard__title"></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="search-trending__btnmore">
+            VER MÁS
+          </button>
+        </div>
+        <div class="search-trending__noresults">
+          <img
+            src="assets/icon-busqueda-sin-resultado.svg"
+            alt="Sin resultados"
+            class="search-trending__imgnoresults"
+          >
+          <p class="search-trending__infonoresults">
+            Intenta con otra búsqueda
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="favorites">
+      <div class="favorites__main">
+        <img
+          src="assets/icon-favoritos.svg"
+          alt="Favoritos"
+          class="favorites__imgfavorites"
+        >
+        <h1 class="favorites__title">Favoritos</h1>
+        <div class="favorites__container-main">
+          <div class="favorites__container">
+            <div class="favorites__items">
+              <div class="optioncard">
+                <div class="optioncard__container">
+                  <button
+                    type="button"
+                    class="optioncard__btnicon btn-favorites">
+                      <i class="expand-card__iconfav icon-favorites fa-heart"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="optioncard__btnicon btn-download">
+                    <img
+                      src="assets/icon-download.svg"
+                      alt="icono de descarga"
+                      class="optioncard__icon icon-download">
+                  </button>
+                  <button
+                    type="button"
+                    class="optioncard__btnicon btn-max">
+                    <img
+                      src="assets/icon-max-normal.svg"
+                      alt="icono de maximizar"
+                      class="optioncard__icon icon-max">
+                  </button>
+                </div>
+                <div class="optioncard__container-data">
+                  <p class="optioncard__user"></p>
+                  <h6 class="optioncard__title"></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="favorites__btnmore">
+            VER MÁS
+          </button>
+        </div>
+        <div class="favorites__noresults">
+          <img
+            src="assets/icon-fav-sin-contenido.svg"
+            alt="Sin resultados"
+            class="favorites__imgnoresults"
+          >
+          <p class="favorites__infonoresults">
+            "¡Guarda tu primer GIFO en Favoritos para que se guarde aquí!"
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="mygifos">
+      <div class="mygifos__main">
+        <img
+          src="assets/icon-mis-gifos.svg"
+          alt="Mis GIFOS"
+          class="mygifos__imgmygifos"
+        >
+        <h1 class="mygifos__title">Mis GIFOS</h1>
+        <div class="mygifos__container-main">
+          <div class="mygifos__container">
+            <div class="mygifos__items">
+              <div class="optioncard-mygifos">
+                <div class="optioncard-mygifos__container">
+                  <button
+                    type="button"
+                    class="optioncard-mygifos__btnicon btn-delete-mygifos">
+                    <img
+                      src="assets/icon-trash-normal.svg"
+                      alt="icono de elimimar"
+                      class="optioncard-mygifos__icon icon-delete-mygifos">
+                  </button>
+                  <button
+                    type="button"
+                    class="optioncard-mygifos__btnicon btn-download-mygifos">
+                    <img
+                      src="assets/icon-download.svg"
+                      alt="icono de descarga"
+                      class="optioncard-mygifos__icon icon-download-mygifos">
+                  </button>
+                  <button
+                    type="button"
+                    class="optioncard-mygifos__btnicon btn-max-mygifos">
+                    <img
+                      src="assets/icon-max-normal.svg"
+                      alt="icono de maximizar"
+                      class="optioncard-mygifos__icon icon-max-mygifos">
+                  </button>
+                </div>
+                <div class="optioncard-mygifos__container-data">
+                  <p class="optioncard-mygifos__user"></p>
+                  <h6 class="optioncard-mygifos__title"></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="mygifos__btnmore">
+            VER MÁS
+          </button>
+        </div>
+        <div class="mygifos__noresults">
+          <img
+            src="assets/icon-mis-gifos-sin-contenido.svg"
+            alt="Sin resultados"
+            class="mygifos__imgnoresults"
+          >
+          <p class="mygifos__infonoresults">
+            ¡Anímate a crear tu primer GIFO!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="expand-card">
+      <div class="expand-card__main">
+        <div class="expand-card__container-iconimg">
+          <img
+            src="assets/close.svg"
+            alt="Icono cerrar"
+            class="expand-card__iconimg"
+          >
+        </div>
+        <div class="expand-card__container-image">
+          <img
+            src="assets/imagen_no_disponible.png"
+            alt="Imagen no encontrada"
+            class="expand-card__image"
+          >
+        </div>
+        <div class="expand-card__container-information">
+          <div class="expand-card__container-data">
+            <p class="expand-card__user"></p>
+            <h6 class="expand-card__title"></h6>
+          </div>
+          <div class="expand-card__container-buttons">
+            <button
+              type="button"
+              class="expand-card__btnicon btn-favorites">
+              <i class="expand-card__iconfav icon-favorites fa-heart"></i>
+            </button>
+            <button
+              type="button"
+              class="expand-card__btnicon btn-download">
+              <img
+                src="assets/icon-download.svg"
+                alt="icono de descarga"
+                class="expand-card__icondow icon-download"
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="create-gifos">
+      <div class="create-gifos__main">
+        <div class="create-gifos__container-video">
+          <div class="create-gifos__container-camera">
+            <img
+              src="assets/element_cinta1.svg"
+              alt="imagen de cinta"
+              class="create-gifos__tape-one"
+            >
+            <img
+              src="assets/element_cinta2.svg"
+              alt="imagen de cinta"
+              class="create-gifos__tape-two"
+            >
+            <img
+              src="assets/element-camara.svg"
+              alt="imagen de camara"
+              class="create-gifos__camera"
+            >
+            <img
+              src="assets/element-luz-camara.svg"
+              alt="imagen de luz de camara"
+              class="create-gifos__light"
+            >
+          </div>
+          <div class="create-gifos__video-main">
+            <div class="create-gifos__video">
+              <div class="create-gifos__corner"></div>
+              <div class="create-gifos__corner"></div>
+              <div class="create-gifos__corner"></div>
+              <div class="create-gifos__corner"></div>
+              <div class="create-gifos__container-initial-information">
+                <h3 class="create-gifos__title-initial-information">
+                  Aquí podrás<br>crear tus propios
+                  <span class="create-gifos__title-initial-strong">GIFOS</span>
+                </h3>
+                <p class="create-gifos__container-information">
+                  ¡Crea tu GIFO en sólo 3 pasos!<br>
+                  (sólo necesitas una cámara para grabar un video)
+                </p>
+              </div>
+              <div class="create-gifos__container-camera-access">
+                <h3 class="create-gifos__title-camera-access">
+                  ¿Nos das acceso<br>a tu cámara?
+                </h3>
+                <p class="create-gifos__container-information-access">
+                  El acceso a tu camara será válido sólo<br>
+                  por el tiempo en el que estés creando el GIFO.
+                </p>
+              </div>
+              <div class="create-gifos__container-camera-active">
+                <video
+                  class="create-gifos__record-video"
+                >
+                </video>
+              </div>
+              <div class="create-gifos__container-card-status">
+                <div class="create-gifos__status-loading">
+                  <img
+                    src="assets/loader.svg"
+                    alt="Imagen subiendo"
+                    class="create-gifos__status-image-loading"
+                  >
+                  <p class="create-gifos__status-description-loading">
+                    Estamos subiendo tu GIFO
+                  </p>
+                </div>
+                <div class="create-gifos__status-loaded">
+                  <div class="create-gifos__container-buttons-loaded">
+                    <button
+                      class="create-gifos__buttons-status-loaded create-gifos__buttons-dowload">
+                      <img
+                        src="assets/icon-download.svg"
+                        alt="icono de descarga"
+                        class="create-gifos__buttons-icon"
+                      >
+                    </button>
+                    <button
+                      class="create-gifos__buttons-status-loaded create-gifos__buttons-link">
+                      <img
+                        src="assets/icon-link-normal.svg"
+                        alt="icono de link"
+                        class="create-gifos__buttons-icon"
+                      >
+                    </button>
+                  </div>
+                  <div class="create-gifos__buttons-loaded">
+                    <img
+                      src="assets/check.svg"
+                      alt="Imagen subido"
+                      class="create-gifos__status-image-loaded"
+                    >
+                    <p class="create-gifos__status-description-loaded">
+                      GIFO subido con éxito
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="create-gifos__container-options">
+              <div class="create-gifos__container-main">
+                <div class="create-gifos__container-buttons">
+                  <button
+                    class="create-gifos__buttons-steps create-gifos__step-one"
+                    id="step-one">
+                    1
+                  </button>
+                  <button
+                    class="create-gifos__buttons-steps create-gifos__step-two"
+                    id="step-two">
+                    2
+                  </button>
+                  <button
+                    class="create-gifos__buttons-steps create-gifos__step-three"
+                    id="step-three">
+                    3
+                  </button>
+                </div>
+                <div class="create-gifos__contanier-menu">
+                  <p class="create-gifos__time-counter">00:00:00</p>
+                  <button
+                    class="create-gifos__repaet-catch"
+                    id="repeat-catch">
+                    REPETIR CAPTURA
+                  </button>
+                </div>
+              </div>
+              <div class="create-gifos__container-separation-line"></div>
+              <div class="create-gifos__container-buttons-actions">
+                <button
+                  type="button"
+                  class="create-gifos__buttons-actions create-gifos__btn-start"
+                  id="btn-start"
+                >
+                  COMENZAR
+                </button>
+                <button
+                  type="button"
+                  class="create-gifos__buttons-actions create-gifos__btn-record"
+                  id="btn-record"
+                >
+                  GRABAR
+                </button>
+                <button
+                  type="button"
+                  class="create-gifos__buttons-actions create-gifos__btn-finish"
+                  id="btn-finish"
+                >
+                  FINALIZAR
+                </button>
+                <button
+                  type="button"
+                  class="create-gifos__buttons-actions create-gifos__btn-upload"
+                  id="btn-upload"
+                >
+                  SUBIR GIFO
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="create-gifos__container-movie">
+            <img
+              src="assets/pelicula.svg"
+              alt="imagen de cinta de pelicula"
+              class="create-gifos__movie"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="trending-gifos">
+      <div class="trending-gifos__main">
+        <div class="trending-gifos__content">
+          <h3 class="trending-gifos__title">Trending GIFOS</h3>
+          <p class="trending-gifos__description">
+            Mira los últimos GIFOS de nuestra comunidad.
+          </p>
+        </div>
+        <div class="trending-gifos__container-main">
+          <button
+            type="button"
+            class="trending-gifos__buttom trending-gifos__previous"
+            id="previous"
+          >
+            <i class="trending-gifos__btn-left trending-gifos__btn-img far fa-angle-left"></i>
+          </button>
+          <div class="trending-gifos__container-cards">
+            <div class="trending-gifos__gifcards"></div>
+          </div>
+          <button
+            type="button"
+            class="trending-gifos__buttom trending-gifos__next"
+            id="next"
+          >
+            <i class="trending-gifos__btn-rigth trending-gifos__btn-img far fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-content__redes">
+          <p class="footer-content__title">Compartir en:</p>
+          <div class="footer-content__contenticons">
+            <a
+              class="footer-content__link"
+              href="https://www.facebook.com/"
+              target="_blank"
+            >
+              <i class="footer-content__icons fab fa-facebook-f"></i>
+            </a>
+            <a
+              class="footer-content__link"
+              href="https://twitter.com/"
+              target="_blank"
+            >
+              <i class="footer-content__icons fab fa-twitter"></i>
+            </a>
+            <a
+              class="footer-content__link"
+              href="https://www.instagram.com/"
+              target="_blank"
+            >
+              <i class="footer-content__icons fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-content__copyright">
+          <p class="footer-content__description">
+            © GIFOS 2020 All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <script src="./scripts/main.js" type="module"></script>
+  <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+</body>
+
+</html>

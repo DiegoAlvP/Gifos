@@ -1,0 +1,170 @@
+@import '../configStyles/variables';
+
+.main-dm {
+  background: $bg;
+}
+.main-dm .header-nav__main {
+  background: $bg;
+  border-top: 5px solid $border-t;
+}
+.main-dm .dm {
+  background: $bg-th;
+}
+.main-dm .header-nav__options {
+  background: $bg-f;
+  @media screen and (min-width: 1024px) {
+    background-color: $bg;
+  }
+}
+.main-dm .header-nav__link {
+  @media screen and (min-width: 1024px) {
+    color: $bg-th;
+  }
+}
+.main-dm .header-nav__link:active {
+  @media screen and (min-width: 1024px) {
+    color: $text-th;
+  }
+}
+.main-dm .header-nav__btncreate{
+  border: 1px solid $border;
+  background-color: $fondo3;
+  color: $text;
+}
+.main-dm .header-nav__btncreate:hover {
+  background-color: $bg-th;
+  color: $secondaryText;
+}
+.main-dm .search__title-content {
+  color: $text;
+}
+.main-dm .search__title-note {
+  color: $text-t;
+}
+.main-dm .search__form {
+  border: 1px solid $border;
+}
+.main-dm .search__text {
+  border-bottom: 0.3px $border-th;
+  color: $text;
+}
+.main-dm .search-content__title {
+  color: $text;
+}
+.main-dm .search-content__description {
+  color: $text;
+}
+.main-dm .search__icon {
+  color: $border-th;
+}
+.main-dm .search__iconoff {
+  color: $border;
+}
+.main-dm .search__iconoff::before {
+  font-weight: 200;
+}
+.main-dm .search-trending__itemtitle {
+  color: $text;
+}
+.main-dm .search-trending__btnmore {
+  background: $bg;
+  color: $text;
+  border: 1px solid $border;
+}
+.main-dm .search-trending__btnmore:hover {
+  background: $bg-th;
+  color: $text-f;
+  border: 1px solid $border;
+}
+.main-dm .favorites__btnmore {
+  background: $bg;
+  color: $text;
+  border: 1px solid $border;
+}
+.main-dm .favorites__btnmore:hover {
+  background: $bg-th;
+  color: $text-f;
+  border: 1px solid $border;
+}
+.main-dm .mygifos__btnmore {
+  background: $bg;
+  color: $text;
+  border: 1px solid $border;
+}
+.main-dm .mygifos__btnmore:hover {
+  background: $bg-th;
+  color: $text-f;
+  border: 1px solid $border;
+}
+.main-dm .list-dm {
+  background: $bg;
+}
+.main-dm .trending-gifos {
+  background: $bg-t;
+}
+.main-dm .trending-gifos__previous {
+  border: 1px solid $border;
+  background-color: $fondo4;
+  color: $text;
+}
+.main-dm .trending-gifos__next {
+  border: 1px solid $border;
+  background-color: $fondo4;
+  color: $text;
+}
+.main-dm .trending-gifos__previous:hover {
+  background-color: $bg-th;
+  color: $secondaryText;
+}
+.main-dm .trending-gifos__next:hover {
+  background-color: $bg-th;
+  color: $secondaryText;
+}
+.main-dm .create-gifos__container-information {
+  color: $text;
+}
+.main-dm .create-gifos__container-information-access {
+  color: $text;
+}
+.main-dm .trending-gifos__title {
+  color: $text;
+}
+.main-dm .trending-gifos__description {
+  color: $text;
+}
+.main-dm .footer-content__title {
+  color: $text;
+}
+.main-dm .footer-content__description {
+  color: $text;
+}
+.main-dm .create-gifos__buttons-steps {
+  border: 1px solid $border;
+  background-color: $fondo3;
+  color: $text;
+}
+.main-dm .create-gifos__buttons-steps:hover {
+  background-color: $bg-th;
+  color: $secondaryText;
+}
+.main-dm .create-gifos__buttons-actions {
+  border: 1px solid $border;
+  background-color: $fondo3;
+  color: $text;
+}
+.main-dm .create-gifos__buttons-actions:hover {
+  background-color: $bg-th;
+  color: $secondaryText;
+}
+.main-dm .create-gifos__time-counter {
+  color: $text;
+}
+.main-dm .create-gifos__repaet-catch {
+  color: $text;
+}
+.main-dm .footer-content__icons:hover {
+  color: #FFFFFF;
+}
+.main-dm .footer {
+  border-bottom: 5px solid $border-t;
+}

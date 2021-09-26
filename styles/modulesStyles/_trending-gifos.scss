@@ -1,0 +1,115 @@
+.trending-gifos{
+  display: flex;
+  position: relative;
+  background: #F3F5F8;
+
+  &__main{
+    width: 100%;
+    padding: 2.875em 0 5.125em 0;
+  }
+  &__content{
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__title{
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0;
+    line-height: 30px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #572EE5;
+  }
+  &__description{
+    height: 3em;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 12px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #000000;
+    margin: 7px 0 0 0;
+    white-space: pre-line;
+  }
+  &__container-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  &__buttom{
+    width: 2.5em;
+    height: 2.5em;
+    display: none;
+    border:1px solid #572EE5;
+    color: #572EE5;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+  }
+  &__buttom:hover{
+    background-color: #572EE5;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  &__btn-img{
+    font-size: 1.6rem;
+  }
+  &__container-cards{
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    margin: 0 1.5625em;
+    display: flex;
+    align-items: center;
+    gap: 1.375em;
+  }
+  &__gifcards{
+    min-width: 15.1875em;
+    height: 11.6875em;
+    margin: 0;
+    position: relative;
+  }
+  &__itemsimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media screen and (min-width: 1024px) {
+    &__main{
+      padding-top: 4.1875em;
+      padding-bottom: 9.375em;
+    }
+    &__title{
+      font-size: 1.5625em;
+    }
+    &__description{
+      height: 1.2em;
+      font-size: 1.125em;
+      margin-top: 0.75em;
+      white-space: normal;
+    }
+    &__container-main{
+      width: 90%;
+      margin: 3.3125em auto 2em auto;
+    }
+    &__buttom{
+      display: flex;
+    }
+    &__container-cards{
+      margin: 0 1.5625em;
+      gap: 1.8125em;
+    }
+    &__gifcards{
+      min-width: 22.3125em;
+      height: 17.1875em;
+    }
+    &__container-cards{
+      overflow: hidden;
+    }
+  }
+}

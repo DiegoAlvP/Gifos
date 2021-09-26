@@ -1,0 +1,223 @@
+.header-nav {
+  height: 5.9375em;
+
+  &__main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: #FFFFFF;
+    border-top: 5px solid #572EE5;
+    width: 100%;
+    height: 5.9375em;
+    z-index: 100;
+  }
+  &__icon{
+    width: 56px;
+    height: 49px;
+    margin-left: 22px;
+  }
+  &__image{
+    width: 100%;
+    height: 100%;
+  }
+  &__btn{
+    display: none;
+  }
+  &__btn:checked ~ &__label &__bars1{
+    transform: rotate(45deg);
+    top: 5px;
+  }
+  &__btn:checked ~ &__label &__bars2{
+    opacity: 0;
+  }
+  &__btn:checked ~ &__label &__bars3{
+    transform: rotate(-45deg);
+    top: 5px;
+  }
+  &__label{
+    width: 17px;
+    height: 16px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 1.625em;
+  }
+  &__label &__bars1, &__bars2, &__bars3{
+    position: absolute;
+    content: '';
+    background: #572EE5;
+    width: 15px;
+    height: 2px;
+    border-radius: 5px;
+    transition: all 100ms ease;
+  }
+  &__bars2{
+    top: 6px;
+  }
+  &__bars3{
+    top: 11px;
+  }
+  &__options{
+    position: absolute;
+    background: rgba(87,46,229,0.90);
+    width: 100%;
+    top: 5.625em;
+    display: none;
+    height: 100%;
+    z-index: 1;
+  }
+  &__btn:checked ~ &__options{
+    display: block;
+    height: 100vh;
+  }
+  &__items{
+    margin: 0;
+    padding: 0;
+    margin-top: 1.0625em;
+  }
+  &__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.75em;
+    position: relative;
+  }
+  &__item::before{
+    content: '';
+    width: 41px;
+    height: 0.1px;
+    border: 1px solid #FFFFFF;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 11px
+  }
+  &__link{
+    color: #FFFFFF;
+    font-size: 0.9375rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+  }
+  &__btncreate{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #572EE5;
+    border-radius: 50%;
+    border: 1px solid #572EE5;
+    width: 3.375em;
+    height: 3.375em;
+    display: none;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+  &__btncreate span{
+    height: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__btncreate:hover{
+    color: #FFFFFF;
+    background-color: #572EE5;
+  }
+  &__btncreate:active{
+    color: #FFFFFF;
+    background-color: #9CAFC3;
+  }
+  &__btncreate span{
+    height: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    &__label{
+      margin: 0 3em 0 0;
+    }
+    &__icon{
+      margin: 0 0 0 3em;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+
+    &__main{
+      display: flex;
+    }
+    &__icon{
+      margin: 0 0 0 9.75em;
+      width: 40%;
+      width: 68px;
+      height: 60px;
+    }
+    &__logo{
+      margin: 0;
+    }
+    &__image{
+      width: 100%;
+      height: 100%;
+    }
+    &__item:hover::before{
+      content: '';
+      width: 100%;
+      border: 1px solid #5ED7C6;
+      background-color: #5ED7C6;
+      position: absolute;
+      bottom: 0;
+      transition: width 0.5s;
+    }
+    &__link{
+      color: #572EE5;
+      font-size: 0.9375rem;
+      font-family: 'Montserrat';
+      font-weight: bold;
+      text-align: center;
+      line-height: 60px;
+      text-transform: uppercase;
+    }
+    &__link:active{
+      color: #9CAFC3;
+    }
+    &__label{
+      display: none;
+    }
+    &__btncreate{
+      display: flex;
+    }
+    &__options{
+      position: initial;
+      background: rgba(255,255,255,0.50);
+      top: 0;
+      display: flex;
+      width: 60%;
+      margin: 0 9.75em 0 0;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+    &__items{
+      display: flex;
+      gap: 3.125em;
+      margin: 0;
+      margin: 0 7.09375em 0 0;
+      min-width: content;
+    }
+    &__item{
+      height: auto;
+    }
+    &__link{
+      height: auto;
+      line-height: 1.5em;
+    }
+    &__item::before{
+      content: '';
+      border: none;
+    }
+  }
+
+}
